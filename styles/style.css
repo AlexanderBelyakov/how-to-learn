@@ -377,24 +377,27 @@
 .footer__column_content_info {
   display: flex;
   flex-direction: column;
+  position: relative;
+  justify-content: center;
+  bottom: 150px;
+  left: 500px;
+  margin: 20px 0 16px;
 }
 
 .footer__column_content_links {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 30px;
-  right: 25px;
-  margin: 20px 0 16px;
+  position: relative;
+  justify-content: center;
 }
 
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  right: -200px;
-  margin: 0;
+  position: relative;
+  justify-content: center;
+  margin: 20px 0 16px;
+  bottom: 100px;
 }
 
 .logo_place_footer {
@@ -413,13 +416,9 @@
 }
 
 .footer__column-heading {
-  position: absolute;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  top: 0;
-  right: 0;
-  margin: 0;
 }
 
 .footer__social-icon {
