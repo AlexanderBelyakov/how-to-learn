@@ -7,7 +7,6 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  flex-wrap: wrap;
 }
 
 /*Header*/
@@ -169,7 +168,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0 auto 0;
 }
 
@@ -202,6 +201,8 @@
   position: relative;
   flex-direction: column;
   min-height: 890px;
+  padding-top: 100px;
+  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
@@ -220,7 +221,7 @@
   font-size: 120px;
   font-weight: bold;
   text-align: center;
-  margin: 100px 0 0;
+  margin: 0;
   z-index: 1;
 }
 
@@ -281,12 +282,14 @@
   background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
+  background-size: 877px 877px;
   z-index: 0;
   position: absolute;
-  right: -210px;
+  right: -210px; /*как в макете получается при значении -215px оставил как по брифу*/
+  top: -5px;
 }
 
-/* Footer (извините, очень криво, делал поздно:)) */
+/* Footer  */
 
 .footer {
   padding: 60px 0 40px;
@@ -333,11 +336,8 @@
 .footer__column-links {
   flex-direction: column;
   padding: 0;
-  list-style-type: none;
-}
-
-.footer__column-links::after {
   margin: 20px 0 16px;
+  list-style-type: none;
 }
 
 .footer__column-link {
@@ -351,6 +351,7 @@
 .footer__social-icon {
   height: 16px;
   width: 16px;
+  margin-right: 10px;
 }
 
 .logo_place_footer {
