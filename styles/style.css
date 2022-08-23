@@ -44,7 +44,7 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -68,6 +68,7 @@
   bottom: 0;
   right: 0;
   z-index: 3;
+  object-fit: cover;
 }
 
 .logo {
@@ -102,7 +103,7 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -146,7 +147,7 @@
 .section-title{
   display: flex;
   justify-content: center;
-  width: 60%;
+  max-width: 60%;
   margin: 0;
   line-height: 1.15;
   font-size: 60px;
@@ -156,7 +157,7 @@
 .section-subtitle {
   display: flex;
   justify-content: center;
-  width: 60%;
+  max-width: 60%;
   margin: 20px 0 0;
   line-height: 34px;
   font-size: 24px;
@@ -170,6 +171,8 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto 0;
+  list-style: none;
+  padding: 0;
 }
 
 .table__cell {
@@ -286,7 +289,8 @@
   z-index: 0;
   position: absolute;
   right: -210px;
-  top: -5px;
+  top: 0;
+  overflow: hidden;
 }
 
 /* Footer  */
